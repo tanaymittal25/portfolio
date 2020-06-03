@@ -1,6 +1,9 @@
 /* import font */
 @import "./fonts.css";
 
+/* import variables */
+@import "./partials/_variables.css";
+
 /* navbar */
 .header_area .main-menu .navbar .navbar-brand {
   padding: 0 2rem 0 0;
@@ -11,9 +14,22 @@
 }
 
 .header_area .main-menu .nav-item .nav-link {
-  font-family: "Roboto", cursive;
+  font: normal 500 15px/2px var(--roboto);
   text-transform: uppercase;
-  color: black;
-  font-weight: 500;
+  color: var(--title-color);
   padding: 1.7rem;
+}
+
+.header_area .main-menu .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header_area .main-menu .navbar-nav a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
